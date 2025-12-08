@@ -181,7 +181,6 @@ table {
 3. Remove default padding in all browsers.
 */
 
-button,
 input,
 optgroup,
 select,
@@ -1358,4 +1357,85 @@ video {
   .md\:transition-none {
     transition-property: none;
   }
+}
+
+
+
+.dropdown{
+
+    display: inline-block;
+    
+
+}
+
+.dropdown button{
+
+ font-size: 1.5rem;
+  line-height: 2rem;
+  
+
+
+  font-family: Signika, sans-serif;
+
+    color: inherit;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.dropdown a{
+
+    display: block;
+
+    color: inherit
+
+  
+}
+
+.dropdown .content{
+
+    display: none;
+    
+
+    font-family: Signika, sans-serif;
+    font-size: 1.5rem;
+  line-height: 2rem;
+  
+  padding: 10px 15px;
+  
+ color: inherit;
+
+    position: absolute;
+
+    background-color: hsl(0, 0%, 70%);
+
+    min-width: 100px;
+
+
+    z-index: 10
+
+}
+
+.dropdown:hover .content{
+
+    display: block;
+
+
+}
+
+.dropdown:hover button{
+
+    background-color: hsl(0, 0%, 70%);
+    
+
+}
+
+.dropdown a:hover{
+
+    background-color: hsl(0, 0%, 90%);
+
 }
