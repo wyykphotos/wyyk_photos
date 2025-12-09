@@ -23,14 +23,14 @@
 </head>
 
 <body
-  class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+   class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
   <header class="flex w-full overflow-hidden pt-10 pb-1">
     <!-- Navbar -->
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="https://wyykphotos.github.io/wyyk_photos/index.html" class="text-2xl font-signika font-bold">WYYK_PHOTOS</a>
+          <a href="index.html" class="text-2xl font-signika font-bold">WYYK_PHOTOS</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -55,32 +55,33 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300">
-              <a href="https://wyykphotos.github.io/wyyk_photos/index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
+              <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
+              <a href="dist/about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
                 <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
+            </li>
+              <div class="dropdown">
+        
+        <button>FOCUS ON</button>
+        <div class="content">
+            
+            <a href="beachvolleyball.html">BEACH VOLLEYBALL</a>
+
+           <a href="volleyball.html">VOLLEYBALL</a>
+
+            <a href="soccer.html">SOCCER</a>
+
+            <a href="wip.html">PORTRAITURE</a>
+            
+            <a href="wip.html">HOCKEY</a>
             </div>
 
-      <div class="dropdown">
-
-        <button>FOCUS ON</button> 
-                        <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
-
-        <div class="content">
-
-            <a href="https://wyykphotos.github.io/wyyk_photos/beachvolleyball.html">BEACH VOLLEYBALL</a>
-
-            <a href="https://wyykphotos.github.io/wyyk_photos/volleyball.html">VOLLEYBALL</a>
-
-            <a href="https://wyykphotos.github.io/wyyk_photos/soccer.html">SOCCER</a>
-
-            <a href="https://wyykphotos.github.io/wyyk_photos/wip.html">PORTRAITURE</a>
             
-            <a href="https://wyykphotos.github.io/wyyk_photos/wip.html">HOCKEY</a>
+  
 
         </div>
 
