@@ -20,8 +20,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
   <!-- End - Fonts -->
   <!-- Start - Fancybox Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <!-- End - Fancybox Scripts -->
@@ -159,7 +159,17 @@
   </footer>
   <!-- Script for the LightBox -->
   <script>
-    Fancybox.bind("[data-fancybox]", {});
+   Fancybox.bind("[data-fancybox]", {
+  Carousel: {
+    
+    Zoomable: {
+      Panzoom: {
+        clickAction: "iterateZoom",
+        maxScale: 2,
+      },
+    },
+  },
+});
   </script>
   <script src="dist/fade_in.js"></script>
   <script src="dist/menu.js"></script>
