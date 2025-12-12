@@ -159,16 +159,27 @@
   </footer>
   <!-- Script for the LightBox -->
   <script>
-   Fancybox.bind("[data-fancybox]", {
-  Carousel: {
+    Fancybox.bind("[data-fancybox]", {
     
+  Carousel: {
+      Arrows: false,
+        Toolbar: {          
+      display: {
+        
+        left: ["counter"],
+        
+        right: ["zoomIn", "zoomOut", "autoplay", "thumbs", "close"],
+      },
+    },
     Zoomable: {
+      
       Panzoom: {
         clickAction: "iterateZoom",
-        maxScale: 2,
+        Scale: 2,
       },
     },
   },
+
 });
   </script>
   <script src="dist/fade_in.js"></script>
