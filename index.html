@@ -368,7 +368,7 @@
         
         left: ["counter"],
         
-        right: ["zoomIn", "zoomOut", "autoplay", "thumbs", "close"],
+        right: ["autoplay", "thumbs", "close"],
       },
     },
     Zoomable: {
@@ -378,8 +378,27 @@
         Scale: 2,
       },
     },
+ breakpoints: {
+      '(min-width: 768px)': {
+        Arrows: true,
+        Toolbar: {          
+      display: {
+        
+        left: ["counter"],
+        
+        right: ["zoomIn", "zoomOut", "autoplay", "thumbs", "close"],
+      },
+    },
+    Zoomable: {
+      
+      Panzoom: {
+        clickAction: "iterateZoom",
+        Scale: 2,
+      },
+        },
+      },
+    },
   },
-
 });
 
 
